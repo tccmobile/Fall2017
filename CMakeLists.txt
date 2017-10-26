@@ -3,5 +3,5 @@ project(Fall2017)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES Reverse.cpp)
+set(SOURCE_FILES Person.cpp Person.h testPerson.cpp)
 add_executable(Fall2017 ${SOURCE_FILES})
