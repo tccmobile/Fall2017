@@ -15,10 +15,14 @@ class ItemToPurchase {
 public:
     ItemToPurchase();
 
+    ItemToPurchase(const string &itemName, const string &itemDescription, int itemPrice,
+                       int itemQuantity);
+
 private:
     string itemName;
     int itemPrice;
     int itemQuantity;
+    string itemDescription;
 public:
     const string &GetName() const;
 
@@ -26,11 +30,20 @@ public:
 
     int GetPrice() const;
 
+    const string &GetDescription() const;
+
+    void GetDescription(const string &itemDescription);
+
     void SetPrice(int itemPrice);
 
     int GetQuantity() const;
 
     void SetQuantity(int itemQuantity);
+
+    void PrintItemCost();
+
+    void PrintItemDescription();
+
 
 
 };

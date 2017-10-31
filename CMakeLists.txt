@@ -3,5 +3,5 @@ project(Fall2017)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES Person.cpp Person.h testPerson.cpp)
+set(SOURCE_FILES  ItemToPurchase.cpp ItemToPurchase.h ShoppingCart.h ShoppingCart.cpp main.cpp)
 add_executable(Fall2017 ${SOURCE_FILES})

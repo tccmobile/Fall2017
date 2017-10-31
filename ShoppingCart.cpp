@@ -25,11 +25,12 @@ int ShoppingCart::GetCostOfCart() {
     return 0;
 }
 
-void ShoppingCart::AddItem(ItemToPurchase) {
-
+void ShoppingCart::AddItem(ItemToPurchase item) {
+    cartitems.push_back(item);
 }
 
-void ShoppingCart::RemoveItem(string) {
+void ShoppingCart::RemoveItem(string name) {
+    if (cartitems.at(i).GetName()==name)
 
 }
 
@@ -38,7 +39,11 @@ void ShoppingCart::ModifyItem(ItemToPurchase) {
 }
 
 int ShoppingCart::GetNumItemsInCart() {
-    return 0;
+
+    int total = 0;
+
+       total+=cartitems.at(i).GetQuantity();
+    return total;
 }
 
 void ShoppingCart::PrintTotal() {
